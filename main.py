@@ -30,10 +30,27 @@ config.read('swapper.ini')
 
 # Load settings from ini files
 print(f"Loading app settings from {ini_file}.")
-test_server_ip = config.get('Settings', 'test_server_ip', fallback='000.000.000.000:0000')
-print(f"Test server ip loaded: {test_server_ip}")
-live_server_ip = config.get('Settings', 'live_server_ip', fallback='000.000.000.000:0000')
-print(f"Live server ip loaded: {live_server_ip}")
+
+# Load test server IP
+fallback_test_server_ip = '000.000.000.000:0000' # Default test server IP. Overwritten if loaded from ini file.
+loaded_test_server_ip = config.get('Settings', 'test_server_ip', fallback=fallback_test_server_ip)
+test_server_ip = '000.000.000.000:0000'
+if loaded_test_server_ip == '000.000.000.000:0000':
+    test_server_ip = fallback_test_server_ip
+    print("Test server ip reverted to default ip.")
+else:
+    test_server_ip = loaded_test_server_ip
+    print(f"Test server ip loaded: {loaded_test_server_ip}")
+
+# Load live server IP
+fallback_live_server_ip = '000.000.000.000:0000' # Default test server IP. Overwritten if loaded from ini file.
+loaded_live_server_ip = config.get('Settings', 'live_server_ip', fallback=fallback_live_server_ip)
+if loaded_live_server_ip == '000.000.000.000:0000':
+    live_server_ip = fallback_live_server_ip
+    print("Live server ip reverted to default ip.")
+else:
+    live_server_ip = loaded_live_server_ip
+    print(f"Live server ip loaded: {loaded_live_server_ip}")
 
 
 def create_directories(base_path):
