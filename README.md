@@ -15,6 +15,12 @@
 - In the future, simply re-run the application and select your desired server `Test` or `Live` moving forward to swap between files.
 - Thats it!
 
+# [Aquiring File URLs from Spire]
+- If you are using Spire for EQ Emu server management and development, you can get your client file download links via the below method.
+- For more informaton on Spire, go here: https://github.com/Akkadius/spire or use hosted spire here: https://spire.akkadius.com/
+- ![image](https://github.com/user-attachments/assets/dab5d9e5-ee05-49fb-9a6c-0507a32d4583)
+
+
 # [Compile]
 
 - THIS IS NOT REQUIRED! You only need to compile your own binaries if you want to change the application.
