@@ -12,7 +12,7 @@
 - ![image](https://github.com/user-attachments/assets/48ecf1b6-5277-4914-abcb-366ba8e0ccc2)
 - The default server IP addresses for `Live` and `Test` server files are for the `Clumsy's World: Resurgence` EQ Emulator servers. This can be changed via the `swapper.ini` settings file (gets created on first run if not present).
 - ![image](https://github.com/user-attachments/assets/d1fa0050-21fc-44c0-8cf3-6142a6af27f9)
-- Simply repeat this process any time you want to swap your local files to match a specific server's files.
+- In the future, simply re-run the application and select your desired server `Test` or `Live` moving forward to swap between files.
 - Thats it!
 
 # [Compile]
