@@ -1,5 +1,5 @@
 
-[How to Run]
+# [How to Run]
 
 - Download the most current release binary (exe) file.
 - ![image](https://github.com/user-attachments/assets/04173bf7-81a3-4e9f-83c4-3e38a92c65b6)
@@ -15,7 +15,7 @@
 - Simply repeat this process any time you want to swap your local files to match a specific server's files.
 - Thats it!
 
-[Compile]
+# [Compile]
 
 - THIS IS NOT REQUIRED! You only need to compile your own binaries if you want to change the application.
 - If you just want to USE the default app, you can simply use the Release binaries.
